@@ -18,10 +18,21 @@
 The complete Google Colab notebook used to run the experiments, train and evaluate the models, generate result tables and figures, and launch the live demo is available here:
 
 [**Open the Human Activity Recognition – Final Project Notebook**](https://colab.research.google.com/drive/1AX_5f8LvdUvHhtNUnUyiLRuNaPcW_h3p?usp=sharing)
-Large Files – Google Drive
 
-Trained model checkpoints and other large project files are available here:
-https://drive.google.com/drive/folders/1NzH95IteW3bbGT_5PogUwXKDdg6Qr_j2?usp=sharing
+## Large Files
+
+Trained model checkpoints and other large project files are available on Google Drive:
+
+[Access Project Files and Model Checkpoints](https://drive.google.com/drive/folders/1NzH95IteW3bbGT_5PogUwXKDdg6Qr_j2?usp=sharing)
+
+The folder contains trained model checkpoints and other required large files that are not included in the submission ZIP.
+
+Raw datasets are not included in the submission archive.
+
+Access is provided to the instructor and teaching assistants.
+## Demo Video
+
+[Watch the Wearable Human Activity Recognition Demo](https://drive.google.com/file/d/1TzoyNhO7MjAdAprbu7HzzDxoh38bFpWN/view?usp=sharing)
 
 
 ## 1. Task and Main Results
