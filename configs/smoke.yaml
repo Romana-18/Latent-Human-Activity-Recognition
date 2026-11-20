@@ -1,0 +1,5 @@
+# tiny config used only by tests/smoke_test.sh (synthetic data)
+_base_: deepconvlstm.yaml
+name: smoke
+dataset: synthetic
+train: {epochs: 3, batch_size: 32, lr: 0.003}

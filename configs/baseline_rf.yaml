@@ -1,0 +1,11 @@
+name: rf_baseline
+model: baseline
+baseline: rf
+dataset: uci_har
+channels:
+- total_acc
+- body_acc
+- body_gyro
+group: main
+model_args:
+  n_estimators: 300

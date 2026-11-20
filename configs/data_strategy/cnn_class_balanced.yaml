@@ -1,0 +1,4 @@
+_base_: ../cnn1d.yaml
+name: cnn_class_balanced
+group: data
+train: {class_weight: balanced}

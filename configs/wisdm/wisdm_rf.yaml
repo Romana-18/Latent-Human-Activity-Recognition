@@ -1,0 +1,8 @@
+name: wisdm_rf_baseline
+model: baseline
+baseline: rf
+dataset: wisdm
+channels: null
+group: main
+model_args:
+  n_estimators: 100

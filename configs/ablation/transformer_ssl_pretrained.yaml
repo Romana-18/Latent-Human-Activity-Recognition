@@ -1,0 +1,4 @@
+_base_: ../transformer.yaml
+name: transformer_ssl_pretrained
+group: ablation
+pretrain: {enabled: true, epochs: 30, lr: 0.001, mask_ratio: 0.5}

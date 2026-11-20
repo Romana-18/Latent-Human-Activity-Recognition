@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+checkpoints/
+*.pt
+*.pth
+*.joblib
+data/raw/
+data/processed/
+*.zip
+.DS_Store
+Thumbs.db
+contributions/

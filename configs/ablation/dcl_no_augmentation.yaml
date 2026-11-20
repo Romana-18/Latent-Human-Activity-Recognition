@@ -1,0 +1,4 @@
+_base_: ../deepconvlstm.yaml
+name: dcl_no_augmentation
+group: ablation
+augment: {jitter: 0.0, scaling: 0.0, time_warp: 0.0}

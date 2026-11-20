@@ -1,0 +1,213 @@
+{
+ "name": "cnn_aug_timewarp",
+ "dataset": "uci_har",
+ "seed": 0,
+ "exp": "uci_har__cnn_aug_timewarp__seed0",
+ "config": {
+  "name": "cnn_aug_timewarp",
+  "model": "cnn1d",
+  "dataset": "uci_har",
+  "channels": [
+   "total_acc",
+   "body_acc",
+   "body_gyro"
+  ],
+  "group": "data",
+  "augment": {
+   "jitter": 0.0,
+   "scaling": 0.0,
+   "time_warp": 0.2
+  },
+  "model_args": {
+   "width": 64,
+   "kernel": 5,
+   "dropout": 0.47325604079300865
+  },
+  "train": {
+   "epochs": 60,
+   "batch_size": 32,
+   "lr": 0.0023245954661191477,
+   "weight_decay": 0.0001277826875349593,
+   "patience": 10,
+   "label_smoothing": 0.0
+  }
+ },
+ "classes": [
+  "Walking",
+  "Walking Upstairs",
+  "Walking Downstairs",
+  "Sitting",
+  "Standing",
+  "Laying"
+ ],
+ "val": {
+  "macro_f1": 0.9839332520799839,
+  "weighted_f1": 0.9837811415558645,
+  "balanced_acc": 0.9842436038179154,
+  "accuracy": 0.9837067209775967,
+  "kappa": 0.980401201030722,
+  "per_class": {
+   "precision": [
+    0.9929328621908127,
+    1.0,
+    1.0,
+    0.9246031746031746,
+    0.9882352941176471,
+    1.0
+   ],
+   "recall": [
+    0.9894366197183099,
+    1.0,
+    0.98,
+    0.9957264957264957,
+    0.9402985074626866,
+    1.0
+   ],
+   "f1": [
+    0.9911816578483245,
+    1.0,
+    0.98989898989899,
+    0.9588477366255144,
+    0.9636711281070746,
+    1.0
+   ],
+   "support": [
+    284,
+    228,
+    200,
+    234,
+    268,
+    259
+   ]
+  },
+  "confusion_matrix": [
+   [
+    281,
+    0,
+    0,
+    0,
+    3,
+    0
+   ],
+   [
+    0,
+    228,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    196,
+    3,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    0,
+    233,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    16,
+    252,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    259
+   ]
+  ]
+ },
+ "test": null,
+ "cost": {
+  "params": 127494,
+  "model_size_mb": 0.524019,
+  "train_time_s": 12.355732917785645,
+  "epochs_run": 13,
+  "infer_ms_gpu": 0.8183070800077985,
+  "infer_ms_cpu": 0.7447980100005225,
+  "peak_mem_mb": 118.578176,
+  "hardware": "GPU: Tesla T4 | CPU: x86_64"
+ },
+ "history": [
+  {
+   "epoch": 0,
+   "train_loss": 0.30035164341302645,
+   "val_macro_f1": 0.9640558776394736
+  },
+  {
+   "epoch": 1,
+   "train_loss": 0.1757569795366371,
+   "val_macro_f1": 0.9351097419738313
+  },
+  {
+   "epoch": 2,
+   "train_loss": 0.1595880185466353,
+   "val_macro_f1": 0.9839332520799839
+  },
+  {
+   "epoch": 3,
+   "train_loss": 0.14279133924458137,
+   "val_macro_f1": 0.9691291271674977
+  },
+  {
+   "epoch": 4,
+   "train_loss": 0.14410707254934157,
+   "val_macro_f1": 0.9666072984777344
+  },
+  {
+   "epoch": 5,
+   "train_loss": 0.1392358078346161,
+   "val_macro_f1": 0.983736051655737
+  },
+  {
+   "epoch": 6,
+   "train_loss": 0.13407056057056738,
+   "val_macro_f1": 0.9609788568316774
+  },
+  {
+   "epoch": 7,
+   "train_loss": 0.141117219931821,
+   "val_macro_f1": 0.9680218079925428
+  },
+  {
+   "epoch": 8,
+   "train_loss": 0.1344532522595158,
+   "val_macro_f1": 0.9650707539585124
+  },
+  {
+   "epoch": 9,
+   "train_loss": 0.1298828469863411,
+   "val_macro_f1": 0.9767945291498781
+  },
+  {
+   "epoch": 10,
+   "train_loss": 0.12627538995252396,
+   "val_macro_f1": 0.9744514787530676
+  },
+  {
+   "epoch": 11,
+   "train_loss": 0.13065992596097128,
+   "val_macro_f1": 0.9573176450271202
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.12550768067103135,
+   "val_macro_f1": 0.9719794502448598
+  }
+ ],
+ "group": "data"
+}

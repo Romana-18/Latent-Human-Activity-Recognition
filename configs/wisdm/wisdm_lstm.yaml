@@ -1,0 +1,22 @@
+name: wisdm_bilstm
+model: rnn
+dataset: wisdm
+channels: null
+group: main
+augment:
+  jitter: 0.03
+  scaling: 0.1
+  time_warp: 0.0
+model_args:
+  hidden: 128
+  layers: 2
+  cell: lstm
+  bidirectional: true
+  dropout: 0.2105857020572387
+train:
+  epochs: 60
+  batch_size: 64
+  lr: 0.0017720712251937955
+  weight_decay: 6.573214670265966e-05
+  patience: 10
+  label_smoothing: 0.0

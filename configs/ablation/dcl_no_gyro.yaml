@@ -1,0 +1,5 @@
+_base_: ../deepconvlstm.yaml
+name: dcl_no_gyro
+group: ablation
+channels: [total_acc, body_acc]
+only_dataset: uci_har

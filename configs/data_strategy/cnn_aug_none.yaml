@@ -1,0 +1,4 @@
+_base_: ../cnn1d.yaml
+name: cnn_aug_none
+group: data
+augment: {jitter: 0.0, scaling: 0.0, time_warp: 0.0}

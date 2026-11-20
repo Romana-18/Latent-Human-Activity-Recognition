@@ -1,0 +1,23 @@
+name: wisdm_deepconvlstm_attn
+model: deepconvlstm
+dataset: wisdm
+channels: null
+group: main
+augment:
+  jitter: 0.03
+  scaling: 0.1
+  time_warp: 0.0
+model_args:
+  filters: 64
+  kernel: 5
+  hidden: 128
+  lstm_layers: 2
+  dropout: 0.38508081079316014
+  attention: true
+train:
+  epochs: 60
+  batch_size: 32
+  lr: 0.00030905002697847
+  weight_decay: 0.0011230233998349253
+  patience: 10
+  label_smoothing: 0.0

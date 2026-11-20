@@ -1,0 +1,4 @@
+_base_: ../deepconvlstm.yaml
+name: dcl_no_attention
+group: ablation
+model_args: {attention: false}

@@ -1,0 +1,25 @@
+name: bilstm
+model: rnn
+dataset: uci_har
+channels:
+- total_acc
+- body_acc
+- body_gyro
+group: main
+augment:
+  jitter: 0.03
+  scaling: 0.1
+  time_warp: 0.0
+model_args:
+  hidden: 128
+  layers: 2
+  cell: lstm
+  bidirectional: true
+  dropout: 0.1055073798362729
+train:
+  epochs: 60
+  batch_size: 128
+  lr: 0.0007036748180773128
+  weight_decay: 0.0003230349377934
+  patience: 10
+  label_smoothing: 0.0
